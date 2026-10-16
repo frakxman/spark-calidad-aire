@@ -17,5 +17,20 @@ Java 11, Apache Spark 3.5.8 y Python 3.
     python3 -m py_compile analisis_calidad_aire.py
     spark-submit analisis_calidad_aire.py
 
+## Gráficas
+
+Después del análisis, y desde la misma carpeta data, genera las gráficas
+(requiere matplotlib):
+
+    pip install matplotlib
+    python3 graficas_calidad_aire.py
+
+Las imágenes se guardan en resultados/graficas/:
+
+![Promedios por hora](resultados/graficas/promedios_por_hora.png)
+![Promedios mensuales](resultados/graficas/promedios_mensuales.png)
+![Correlaciones con NOx](resultados/graficas/correlaciones_nox.png)
+![Valores ausentes](resultados/graficas/valores_ausentes.png)
+
 ## Dataset
 https://archive.ics.uci.edu/dataset/360/air+quality
